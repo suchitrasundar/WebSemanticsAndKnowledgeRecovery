@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/suchi/ontologies/Airbnb#"
+     xml:base="http://www.semanticweb.org/suchi/ontologies/Airbnb"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Baker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Baker">
+        <rdfs:label>Baker</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasNeighbourhood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Flexible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Flexible">
+        <rdfs:label>Flexible</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostCancellationPolicy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Free -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Free">
+        <rdfs:label>Free</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Amenities"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Paid"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasStreetParking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Hale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Hale">
+        <rdfs:label>Hale</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasNeighbourhood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Highland -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Highland">
+        <rdfs:label>Highland</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasNeighbourhood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Light_Rail -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Light_Rail">
+        <rdfs:label>Light_Rail</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasTransit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Moderate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Moderate">
+        <rdfs:label>Moderate</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostCancellationPolicy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#NorthPark_Hill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#NorthPark_Hill">
+        <rdfs:label>NorthPark_Hill</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasNeighbourhood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#NotResponsive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#NotResponsive">
+        <rdfs:label>NotResponsive</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Responsive"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostResponseType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBathroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBathroom">
+        <rdfs:label>OneBathroom</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBedroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBedroom">
+        <rdfs:label>OneBedroom</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBedroom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#OnePointFive_Bathroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OnePointFive_Bathroom">
+        <rdfs:label>OnePointFive_Bathroom</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBathroom"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Paid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Paid">
+        <rdfs:label>Paid</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Amenities"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasStreetParking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#RTD_Bus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#RTD_Bus">
+        <rdfs:label>RTD_Bus</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasTransit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Responsive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Responsive">
+        <rdfs:label>Responsive</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostResponseType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Strict -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Strict">
+        <rdfs:label>Strict</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostCancellationPolicy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#ThreeBathrooms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#ThreeBathrooms">
+        <rdfs:label>ThreeBathrooms</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoPointFive_Bathrooms"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBathroom"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBathrooms"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OnePointFive_Bathroom"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#ThreeBedroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#ThreeBedroom">
+        <rdfs:label>ThreeBedroom</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBedroom"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBedroom"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBedroom"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBathrooms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBathrooms">
+        <rdfs:label>TwoBathrooms</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBathroom"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OnePointFive_Bathroom"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBedroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBedroom">
+        <rdfs:label>TwoBedroom</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBedroom"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBedroom"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoPointFive_Bathrooms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoPointFive_Bathrooms">
+        <rdfs:label>TwoPointFive_Bathrooms</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#TwoBathrooms"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OneBathroom"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#OnePointFive_Bathroom"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBathroom">
+        <rdfs:label>hasBathroom</rdfs:label>
+        <rdfs:comment>Specifies the number of Bathrooms that are present in the house. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBedroom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasBedroom">
+        <rdfs:label>hasBedroom</rdfs:label>
+        <rdfs:comment>Specifies the number of bedrooms that are present in the house. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hasNeighbourhood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasNeighbourhood">
+        <rdfs:label>hasNeighbourhood</rdfs:label>
+        <rdfs:comment>Specifies the immediate neighbourhood of the house, comprising of NorthPark Hill, Highland, Hale and Baker. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hasStreetParking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasStreetParking">
+        <rdfs:label>hasStreetParking</rdfs:label>
+        <rdfs:comment>Specifies the type of street parking that comes along with the house.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Amenities"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hasTransit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasTransit">
+        <rdfs:label>hasTransit</rdfs:label>
+        <rdfs:comment>The transit available to and from the house.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hasWifi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hasWifi">
+        <rdfs:label>hasWifi</rdfs:label>
+        <rdfs:comment>The amenities that house comprises of. </rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Amenities"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hostCancellationPolicy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostCancellationPolicy">
+        <rdfs:label>hostCancellationPolicy</rdfs:label>
+        <rdfs:comment>Specifies the cancellation policy of the house, whether strict, moderate or flexible.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#hostResponseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#hostResponseType">
+        <rdfs:label>hostResponseType</rdfs:label>
+        <rdfs:comment>Specifies how responsive the host is. The hosts can be either responsive or not responsive. </rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#City -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#City">
+        <rdfs:label>City</rdfs:label>
+        <rdfs:comment>The city in which the house resides. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#EmailID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#EmailID">
+        <rdfs:label>EmailID</rdfs:label>
+        <rdfs:comment>The host and the customer own an Email ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#HostID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#HostID">
+        <rdfs:label>HostID</rdfs:label>
+        <rdfs:comment>The ID of the host.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Latitude">
+        <rdfs:label>Latitude</rdfs:label>
+        <rdfs:comment>Describes the latitude of the house</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Location">
+        <rdfs:label>Location</rdfs:label>
+        <rdfs:comment>Describes the location of the house. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Longitude">
+        <rdfs:label>Longitude</rdfs:label>
+        <rdfs:comment>Describes the longitude of the house.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Name">
+        <rdfs:label>Name</rdfs:label>
+        <rdfs:comment>The customer and the host have a first name and a last name, </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Overview -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Overview">
+        <rdfs:label>Overview</rdfs:label>
+        <rdfs:comment>Describes the overview of the house</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Policy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Policy">
+        <rdfs:label>Policy</rdfs:label>
+        <rdfs:comment>Describes the policies defined by the host of the house. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Price">
+        <rdfs:label>Price</rdfs:label>
+        <rdfs:comment>The rental price of the house. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Review -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Review">
+        <rdfs:label>Review</rdfs:label>
+        <rdfs:comment>The overall review posted by the customers who stayed in the house before. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#State -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#State">
+        <rdfs:label>State</rdfs:label>
+        <rdfs:comment>The State in which the house resides. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Summary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Summary">
+        <rdfs:label>Summary</rdfs:label>
+        <rdfs:comment>The overall summary of the house. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Zip -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Zip">
+        <rdfs:label>Zip</rdfs:label>
+        <rdfs:comment>The zipcode of the house. </rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#firstName">
+        <rdfs:label>firstName</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#lastName">
+        <rdfs:label>lastName</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Amenities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Amenities"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Apartment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Apartment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Condominium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Condominium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#EntireHouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#EntireHouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#RoomType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#GuestSuite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#GuestSuite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Hospitals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Hospitals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Host -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Host">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#House"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Loft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Loft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Offices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Offices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#PrivateRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#PrivateRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#RoomType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#RoomType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#RoomType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Schools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Schools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Shops -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Shops">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Neighbourhood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Space"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Townhouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Townhouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#HouseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Walk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Walk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/suchi/ontologies/Airbnb#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#City_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#City_Park"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#James -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#James"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Katy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Katy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Micheal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Micheal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#Private -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#Private"/>
+    
+
+
+    <!-- http://www.semanticweb.org/suchi/ontologies/Airbnb#West_Highland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/suchi/ontologies/Airbnb#West_Highland"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
